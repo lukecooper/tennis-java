@@ -4,7 +4,7 @@ A Java app implementing the DataRock Tennis programming challenge.
 
 ## Requirements
 
-Java 21 - https://adoptium.net/
+Java 21 - https://adoptium.net/temurin/releases/
 
 Maven - https://maven.apache.org/install.html
 
@@ -34,7 +34,7 @@ Match.PlayMatch("player 1", "player 2", List.of("player 1", "player 1", "player 
 - I initially implemented this solution in Clojure then ported it to Java, so any perceived strangeness in the design probably comes from that.
 
 
-- I chose to implement the score keeping as a map of `name -> point`, so that any player names could be used. This means passing the player names around quite a bit, but again this comes from a Clojure design perspective (where it much easier).
+- I chose to implement the score keeping as a map of `name -> point`, so that any player names could be used. This means passing the player names around quite a bit, but again this comes from a Clojure design perspective (where it is  much easier).
 
 
 - The current implementation can be easily extended to score a match of multiple sets, by adding a history or set scores and checking the winner of each to determine the match winner (best of `n` sets).
